@@ -1,0 +1,86 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: logo and image */
+#logo{
+    margin: 10;
+}
+
+#logo img{
+    height: 103px;
+    margin: 5px 69px;
+}
+
+/* Navigation Bar: list styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+   padding: 10px;
+   text-decoration: none;
+   color: white;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-color: black;
+}
+#navbar ul li a:hover{
+ color: rgb(124, 246, 255);
+ background-color: rgb(78, 73, 78);
+}
+
+/* Home section */
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     align-content: center;
+     height: 400px;
+ }
+ #home::before{
+        content: "";
+        position: absolute;
+        background:url('https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg') no-repeat center center/cover;
+        
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background-color: black;
+    }
+
+    .hprimary{
+        font-family: ;
+        font-size: 2.8rem;
+        padding: 5px;
+    }
